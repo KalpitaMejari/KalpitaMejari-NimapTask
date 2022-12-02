@@ -1,0 +1,54 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="pop-up.component.css">
+</head>
+<div>
+
+  <body>
+
+    <div class="reg">
+      <h2>Registration Page</h2>
+      <br><br>
+      <form class="frm1" action="../../register/register.component.html" target="_blank">
+        <label for="img1"><span id="s"><strong>Profile Photo*</strong></span></label><br>
+        <input id="img1" type="file" capture alt="Photo" width="48" height="48" placeholder="Photo" required><br><br>
+        <label for="inf1"><span id="s1"><strong>Name*</strong></span></label><br>
+        <input id="inf1" type="text" placeholder="First Name" required>
+        <input id="inf1" class="ln" type="text" placeholder="Last Name" required><br><br>
+        <label for="inf2"><span id="s2"><strong>Email ID*</strong></span></label><br>
+        <input id="inf2" type="email" placeholder="Email" required><br><br>
+        <label for="inf3"><span id="s3"><strong>Mobile*</strong></span></label><br>
+        <input id="inf3" type="text" placeholder="(541)754-3010" required><br><br>
+        <label for="inf4"><span id="s4"><strong>Age</strong></span></label><br>
+        <input id="inf4" type="number" placeholder="Age"><br><br>
+        <label for="inf5"><span id="s5"><strong>Address*</strong></span></label><br>
+        <input id="inf5" type="text" placeholder="Address" required>
+        <input class="pin" type="text" placeholder="Pin code"><br><br>
+
+        <select name="State" id="st1">
+          <option id="n1" value="State">State</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="Delhi">Delhi</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tamilnadu">Tamilnadu</option>
+        </select>
+        <select name="country" id="st2">
+          <option id="n2" value="Country">Country</option>
+          <option value="India">India</option>
+        </select>
+        <br><br>
+        <input class="n3" name="check" type="checkbox" value="check">
+        <p>Subscribe to newsletter</p>
+        <br><br>
+        <button type="button" class="sub" (click)="Profile()">Submit</button>
+        <input class="sub1" type="submit" value="cancel">
+      </form>
+      </div>
+      </body>
+</div>

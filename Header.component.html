@@ -1,0 +1,96 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DemoApp</title>
+  <link rel="stylesheet" href="Header.component.css">
+ 
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <ul>
+        <li><a href="_blank"><b>HOME</b></a></li> |
+        <li> <a href="_blank"><b>ABOUT US</b></a></li> |
+        <li> <a href="_blank"><b>JOBS</b></a></li> |
+        <li> <a href="_blank"><b>CLIENTS</b></a></li> |
+        <li> <a href="_blank"><b>EMPLOYERS</b></a></li> |
+        <li><a href="_blank"><b>CONTACT US</b></a>
+      </ul>
+    </nav>
+
+    <div class="upper">
+
+      <h1 class="app">Demo App</h1>
+      <section class="section1">
+        <form name="form1">
+          <label class="lbl" for="inp1"><i>I'm looking for..</i></label>
+          <br><input name="descreption" id="inp1" type="text" placeholder="Enter a Job Description">
+          <input  class="b1" type="submit">
+          <br></form>
+
+        <form name="form2">
+          <span id="sp1">
+            <input name="user_preferance" id="inp2" type="checkbox" value="FullTime">
+            <p id="p1"> Full Time</p>
+            <input id="inp3" type="checkbox" value="PartTime">
+            <p id="p2"> Part Time / Casual / Freelance</p>
+          </span>
+          <select id="loc" name="user_loc">
+            <option id="sel" value="Select Your Location">Select Your Location</option>
+            <option name="Place" value="mumbai">Mumbai</option>
+            <option name="Place" value="pune">Pune</option>
+            <option name="Place" value="nashik">Nashik</option>
+            <option name="Place" value="Delhi">Delhi</option>
+            <option name="Place" value="Hyderabad">Hyderabad</option>
+            <option name="Place" value="Banglore">Banglore</option>
+            <option name="Place" value="Tamilnadu">Tamilnadu</option>
+            <option name="Place" value="Other">Other</option>
+          </select><br>
+          <span><button type="button" id="inp4" class="b1" (click)="openDialog()">Register</button></span>
+        </form>
+      </section>
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <div class="mid">
+      <h3>We're leaders in</h3>
+      <h1 class="mh1">Creative Digital Recruitment</h1>
+      <b>
+        <mat-divider></mat-divider>
+      </b>
+      <br>
+      <p id="p3">Based on Surry Hills, the creative hub of Sydney we are surrounded by creativity and that reflects on
+        the type of jobs we recruit for.</p>
+    </div>
+    <h4 class="firstH4">Find Out More About Us!!</h4>
+
+    <section class="midSec">
+      <b class="b2">
+        <mat-divider></mat-divider>
+      </b>
+      <h4 id="midH4">Subscribe to our Job Seeker Mailing List</h4><br>
+      <input id="midInp" type="text" placeholder="Enter Your Email Address  &#9993;">
+    </section>
+
+  </main>
+  <footer>
+    <div class="e1">
+      <a class="fan" href="http://www.youtube.com" target="_blank">Youtube</a>&nbsp; | &nbsp;
+      <a class="fan" href="http://www.facebook.com" target="_blank">Facebook</a>&nbsp; | &nbsp;
+      <a class="fan" href="http://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="end"><br><br><br><br><br>
+      <p class="symbol"> &#9993; </p><br>
+      <p class="pEnd">Copyright &copy; 2014 Two Bytes Consulting. <b>Terms & Policies.</b></p>
+    </div>
+  </footer>
+
+</body>
